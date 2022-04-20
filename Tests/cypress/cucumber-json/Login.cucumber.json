@@ -1,0 +1,153 @@
+[
+  {
+    "description": "  Signup with Phone number",
+    "keyword": "Feature",
+    "name": "Signup",
+    "line": 1,
+    "id": "signup",
+    "tags": [],
+    "uri": "Login.feature",
+    "elements": [
+      {
+        "id": "signup;no-input-phone-number-and-no-check-policy",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "No input Phone number and No check Policy",
+        "tags": [
+          {
+            "name": "@SignupPage",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "SubmitButton is \"Disable\"",
+            "result": {
+              "status": "passed",
+              "duration": 687000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "signup;no-input-phone-number",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "No input Phone number",
+        "tags": [
+          {
+            "name": "@SignupPage",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I check the Policy-Checker",
+            "result": {
+              "status": "passed",
+              "duration": 449000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "SubmitButton is \"Disable\"",
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "signup;no-check-policy",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "No check Policy",
+        "tags": [
+          {
+            "name": "@SignupPage",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I fill phone-number \"0926244589\"",
+            "result": {
+              "status": "passed",
+              "duration": 655000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "SubmitButton is \"Disable\"",
+            "result": {
+              "status": "passed",
+              "duration": 109000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "signup;login-pass",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Login pass",
+        "tags": [
+          {
+            "name": "@SignupPage",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I fill phone-number \"0926244589\"",
+            "result": {
+              "status": "passed",
+              "duration": 652000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I check the Policy-Checker",
+            "result": {
+              "status": "passed",
+              "duration": 104000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "SubmitButton is \"not Disable\"",
+            "result": {
+              "status": "passed",
+              "duration": 10147000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
